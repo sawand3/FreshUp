@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Frag_Profile">
+
+
+    <ImageView
+        android:id="@+id/pro_bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_background">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/topitems"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp">
+
+        <ImageView
+            android:id="@+id/pro_back"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+            android:src="@drawable/backarrow"
+            android:layout_marginLeft="20dp"
+            android:tint="@color/white"/>
+
+        <ImageView
+            android:id="@+id/editprofile"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/profile_edit" />
+
+        <TextView
+            android:id="@+id/protext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topitems">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/proimagelay"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile_picture" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_add"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/add" />
+
+
+            </RelativeLayout>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/proimagelay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="10sp">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/round_et"
+                        android:hint="Name"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:id="@+id/pro_name"
+                        android:textAlignment="viewEnd"
+                        android:gravity="end"
+                        />
+
+                    <EditText
+                        android:id="@+id/pro_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/round_et"
+                        android:hint="Email"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:layout_below="@id/pro_name"
+                        android:textAlignment="viewEnd"
+                        android:gravity="end"
+                        />
+
+                    <EditText
+                        android:id="@+id/pro_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/round_et"
+                        android:hint="Phone Number"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:layout_below="@id/pro_email"
+                        android:textAlignment="viewEnd"
+                        android:gravity="end"
+                        />
+
+                    <Button
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundbtn"
+                        android:layout_below="@+id/pro_phone"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:text="LOG OUT"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:drawableLeft="@drawable/profile_logout"
+                        android:paddingLeft="40dp"
+                        android:id="@+id/btnlogout"
+
+                        />
+
+                </RelativeLayout>
+
+                </android.support.v4.widget.NestedScrollView>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

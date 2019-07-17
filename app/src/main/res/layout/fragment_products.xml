@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.Fragment_Product"
+    android:background="@drawable/product_services_background"
+    >
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+             <!--&gt;-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/haircutlay"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginTop="30dp"-->
+
+                <!--&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@drawable/background_hari_wax" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:src="@drawable/hair_wax"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:id="@+id/face"-->
+                    <!--android:layout_margin="10dp"/>-->
+
+
+
+
+            <!--</RelativeLayout>-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/locks"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_below="@id/haircutlay"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginTop="30dp"-->
+               <!--&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@drawable/perfume_background" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="90dp"-->
+                    <!--android:src="@drawable/perfume"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:id="@+id/look"-->
+                    <!--android:layout_margin="10dp"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="PERFUME"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:layout_below="@id/look"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:textSize="17sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--/>-->
+
+            <!--</RelativeLayout>-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_below="@id/locks"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--&gt;-->
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@drawable/face_products_background_" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="90dp"-->
+                    <!--android:src="@drawable/faceproducts"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:id="@+id/packed"-->
+                    <!--android:layout_margin="10dp"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="FACE PRODUCTS"-->
+                    <!--android:textColor="@color/lightyellow"-->
+                    <!--android:layout_below="@id/packed"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:textSize="17sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--/>-->
+
+            <!--</RelativeLayout>-->
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/products_recyclerview"
+                >
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        <!--</LinearLayout>-->
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+
+</RelativeLayout>

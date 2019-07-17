@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Frag_Settings">
+
+    <ImageView
+        android:id="@+id/pro_bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/settings_background">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/topitems_set"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/backarrow"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:tint="@color/white"
+            android:id="@+id/settings_back"
+            />
+
+
+        <TextView
+            android:id="@+id/set_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topitems_set"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="10sp">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_et"
+                android:text="Change Password"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:id="@+id/changepass"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/draw_set_arrow"
+
+
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_et"
+                android:text="FAQ"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:id="@+id/faq"
+                android:layout_below="@id/changepass"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/draw_set_arrow"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_et"
+                android:text="Terms And Conditions"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:id="@+id/terms"
+                android:layout_below="@id/faq"
+                android:drawableRight="@drawable/draw_set_arrow"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_et"
+                android:text="Time Slot"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:id="@+id/xyz"
+                android:layout_below="@id/terms"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/draw_set_arrow"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

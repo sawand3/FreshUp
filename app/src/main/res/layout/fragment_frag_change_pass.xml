@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Frag_Change_Pass">
+
+    <ImageView
+        android:id="@+id/pro_bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/settings_background">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/topitems_set"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/backarrow"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:tint="@color/white"
+            android:id="@+id/settings_back"
+            />
+
+
+        <TextView
+            android:id="@+id/set_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topitems_set"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="10sp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+
+                <TextView
+                    android:id="@+id/tvoldpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Old Password"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_et"
+                    android:hint="*******"
+                    android:textSize="18sp"
+                    android:padding="15dp"
+                    android:id="@+id/oldpass"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/tvoldpass"
+
+
+
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvnewpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="New Password"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_below="@id/oldpass"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_et"
+                    android:hint="******"
+                    android:textSize="18sp"
+                    android:padding="15dp"
+                    android:id="@+id/newpass"
+                    android:layout_below="@id/tvnewpass"
+                    android:textColor="@color/black"
+
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvconpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Confirm Password"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_below="@id/newpass"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_et"
+                    android:hint="******"
+                    android:textSize="18sp"
+                    android:padding="15dp"
+                    android:id="@+id/conpass"
+                    android:layout_below="@id/tvconpass"
+                    android:textColor="@color/black"
+
+                    />
+
+
+                <Button
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundbtn"
+                    android:layout_below="@+id/conpass"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:text="CHANGE PASSWORD"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:id="@+id/btnchangepass"
+                    android:layout_marginBottom="40dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

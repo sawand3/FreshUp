@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_services_background"
+    tools:context=".Fragments.Fragment_Services">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/haircutlay"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/hair_cutting_imae" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="90dp"-->
+            <!--android:src="@drawable/haircuttin"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:id="@+id/face"-->
+            <!--android:layout_margin="20dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="HAIR CUTTING"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_below="@id/face"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:textSize="17sp"-->
+            <!--android:textStyle="bold"/>-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/locks"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_below="@id/haircutlay"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="30dp">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/lookstresses_background" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="90dp"-->
+            <!--android:src="@drawable/looksandtress"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:id="@+id/look"-->
+            <!--android:layout_margin="20dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="LOCKS AND TRESSES"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_below="@id/look"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:textSize="17sp"-->
+            <!--android:textStyle="bold"-->
+            <!--/>-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_below="@id/locks"-->
+
+        <!--&gt;-->
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/p_background_"-->
+            <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="90dp"-->
+            <!--android:src="@drawable/packagesimg"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:id="@+id/packed"-->
+            <!--android:layout_margin="20dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="PACKAGES"-->
+            <!--android:textColor="@color/lightyellow"-->
+            <!--android:layout_below="@id/packed"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:textSize="17sp"-->
+            <!--android:textStyle="bold"-->
+            <!--/>-->
+
+    <!--</RelativeLayout>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/services_recyclerview"
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

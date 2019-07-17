@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProductList">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/hairwax_activity_background"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY">
+
+    </ImageView>
+
+    <ImageView
+
+        android:id="@+id/hairwaximage"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/hair_wax" />
+
+    <TextView
+        android:id="@+id/hairwaxtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hairwaximage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="HAIR WAX"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hairwaxtext"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/haircard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/grey"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="1dp"
+
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:id="@+id/productsDetailRecyclerview"
+                >
+
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

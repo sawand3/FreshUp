@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Freshup</string>
+    <string name="facebook_app_id">1119069381627325</string>
+    <string name="fb_login_protocol_scheme">fb1119069381627325</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homepage">HOME</string>
+    <string name="profile">PROFILE</string>
+    <string name="settings">SETTINGS</string>
+    <string name="promo">PROMO</string>
+    <string name="payment_type">Payment Type</string>
+
+    <string-array name="payment">
+        <item>Debit Card</item>
+        <item>Credit Card</item>
+        <item>Net Banking</item>
+        <item>UPI ID</item>
+    </string-array>
+</resources>

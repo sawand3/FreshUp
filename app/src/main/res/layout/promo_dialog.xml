@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center"
+        >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:src="@drawable/promobg"
+    android:id="@+id/promoimage"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+
+    />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/promoimage"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:layout_centerHorizontal="true"
+    >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENTER YOUR PROMO CODE"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:id="@+id/promotext"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/promotext"
+        android:background="@drawable/round_et"
+        android:padding="10dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/promoet"
+        android:textColor="@color/black"
+
+       />
+
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbtn"
+        android:layout_below="@+id/promoet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="APPLY"
+        android:textColor="@color/lightyellow"
+        android:textSize="18dp"
+        android:id="@+id/btnpromo"
+        android:layout_marginBottom="30dp"
+
+        />
+
+</RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

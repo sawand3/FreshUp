@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Payment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/payment_bg"
+        android:scaleType="fitXY"
+
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backarrow"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:tint="@color/white"
+        android:id="@+id/payment_back"
+        android:layout_marginTop="28dp"
+
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/cartimg"
+        android:layout_below="@id/payment_back"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cart"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAYMENT"
+        android:layout_below="@id/cartimg"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:id="@+id/carttext"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/carttext"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="10sp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payment_type"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:background="@drawable/round_et"
+                android:drawableRight="@drawable/drawdropdown"
+                android:drawableLeft="@drawable/drawvisa"
+                android:text="Debit Card"
+                android:prompt="@string/payment_type"
+                android:entries="@array/payment"
+                android:textColor="@color/black"
+                android:drawablePadding="20dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/payment_type"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/name_surname">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="7dp">
+
+
+
+                    <TextView
+                        android:id="@+id/paytvname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/payment_type"
+                        android:layout_marginTop="20dp"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_et"
+                        android:hint="Name"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:id="@+id/payment_name"
+                        android:layout_below="@id/paytvname"
+                        android:layout_marginTop="5dp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="7dp">
+                    <TextView
+                        android:id="@+id/paytvsurname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/payment_type"
+                        android:layout_marginTop="20dp"
+                        android:text="Surname"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_et"
+                        android:hint="Surname"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:id="@+id/payment_surname"
+                        android:layout_below="@id/paytvname"
+                        android:layout_marginTop="5dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/paytvcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_surname"
+                android:layout_marginTop="20dp"
+                android:text="Surname"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_number"
+                android:layout_below="@id/paytvcard"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_et"
+                android:padding="15dp"
+                android:inputType="number"
+                android:hint="1234567890"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@id/card_number"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:id="@+id/expiry_cvv">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardexpiry"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:drawableRight="@drawable/drawquesmark"
+                    android:hint="Expiry Date"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardcvv"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:hint="CVV"
+                    android:drawableRight="@drawable/drawquesmark"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pay_verify"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/expiry_cvv"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/roundbtn"
+                android:text="Verify"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_margin="20dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

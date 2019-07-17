@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:orientation="vertical"
+    tools:context=".Activities.Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:src="@drawable/loginbackgrond_"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        ></ImageView>
+
+    <ImageView
+        android:id="@+id/img11"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/loginlogo" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img11">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/img11">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                app:cardCornerRadius="10dp"
+                android:clipToPadding="true"
+                android:id="@+id/cardview"
+
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="SIGN UP"
+                        android:textColor="@color/lightyellow"
+                        android:textSize="25dp"
+                        android:id="@+id/tvsignup"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="User Name"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:id="@+id/tvun"
+                        android:layout_below="@+id/tvsignup"/>
+
+                    <EditText
+                        android:id="@+id/usernamesign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_below="@+id/tvun"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_et"
+                        android:hint="User Name"
+                        android:inputType="text"
+                        android:drawableLeft="@drawable/drawuser"
+                        android:drawablePadding="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Email"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:id="@+id/tvemail1"
+                        android:layout_below="@+id/usernamesign"/>
+
+                    <EditText
+                        android:id="@+id/etemail1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_below="@+id/tvemail1"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_et"
+                        android:inputType="textEmailAddress"
+                        android:hint="Email"
+                        android:drawableLeft="@drawable/drawmail"
+                        android:drawablePadding="15dp"
+                        android:paddingLeft="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Password"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:id="@+id/tvpass1"
+                        android:layout_below="@+id/etemail1"/>
+
+                    <EditText
+                        android:id="@+id/etpass1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_below="@+id/tvpass1"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_et"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:drawableLeft="@drawable/drawpass"
+                        android:drawablePadding="15dp"
+                        android:paddingLeft="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Confirm Password"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:id="@+id/tvcpass"
+                        android:layout_below="@+id/etpass1"/>
+
+                    <EditText
+                        android:id="@+id/etconpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_below="@+id/tvcpass"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_et"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:drawableLeft="@drawable/drawpass"
+                        android:drawablePadding="15dp"
+                        android:paddingLeft="20dp"
+                        />
+
+
+                    <Button
+                        android:id="@+id/btnsignup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_below="@+id/etconpass"
+                        android:background="@drawable/roundbtn"
+                        android:text="SIGN UP"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:layout_centerHorizontal="true"
+
+
+                        />
+
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="-30dp"
+
+
+                >
+
+
+                <TextView
+                    android:id="@+id/donthave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Already have an account?"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="Sign In"
+                    android:textColor="@color/lightyellow"
+                    android:id="@+id/alreadysign"
+
+                    />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/time_slot_layout"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/childCardView"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+
+        >
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_width="52dp"-->
+            <!--android:layout_height="52dp"-->
+            <!--app:cardCornerRadius="70dp"-->
+            <!--android:layout_gravity=""-->
+            <!--app:cardBackgroundColor="@color/yellow"-->
+            <!--app:cardElevation="10dp"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/time_slot"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="4:00 PM"-->
+
+
+                <!--/>-->
+        <!--</android.support.v7.widget.CardView>-->
+
+        <TextView
+            android:id="@+id/time_slot"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="4:00 PM"
+            android:background="@drawable/round_et"
+
+
+            />
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
